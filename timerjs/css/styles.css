@@ -1,0 +1,74 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Roboto:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0
+}
+html{
+    height: 100%;
+}
+body {
+    font-family: "Roboto", sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+background: linear-gradient(to right, #c31432, #240b36);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock{
+    font-size: 30px;
+    text-shadow: -1px 0px 15px rgba(37,37,0,0.25);
+    color: lightgray;
+}
+
+.number{
+    font-size: 120px;
+    text-shadow: -1px 0px 15px rgba(37,37,0,0.25);
+    color: lightgray;
+    display: inline-block;
+    width: 140px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+
+}
+
+.boton{
+    margin: 0 7px;
+    padding: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: lightgray;
+
+}
+
+#play{
+    background-image: url(../img/play_arrow_FILL1_wght300_GRAD0_opsz48.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#stop{
+    background-image: url(../img/stop_FILL1_wght300_GRAD0_opsz48.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#play:active{
+    background-color: lightgreen;
+}
+
+#stop:active{
+    background-color: lightcoral;
+}
